@@ -37,6 +37,7 @@ public class WechatServiceImpl implements WechatService {
         String fromUserName = requestMessage.getFromUserName();
 
 
+
         if(wechatUserMapper.getUseIsExist(fromUserName)!=1){//用户不存在创建用户
             wechatUser.setUserName(fromUserName);
             wechatUser.setUserPassword(returnPassword);
@@ -44,6 +45,7 @@ public class WechatServiceImpl implements WechatService {
             if(getUserMessage!=null)
             {
                 System.out.println("创建用户-----用户发送的消息："+getUserMessage);
+
 
                 //这个是响应消息内容
                 context="笔记已记录,若需在线查看请在浏览器中访问网址并输入账户和密码。\n" +
