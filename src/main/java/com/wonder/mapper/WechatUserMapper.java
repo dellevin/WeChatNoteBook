@@ -10,12 +10,11 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author DelLevin
- * @since 2023-05-31 08:43:08
+ * @since 2023-05-31 11:33:06
  */
 @Mapper
 public interface WechatUserMapper extends BaseMapper<WechatUser> {
-
-    int getUseIsExist(String userName);
-
+    int getUseIsExist( String userName);
     String getUsePassword(String userName);
+
 }

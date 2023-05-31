@@ -9,7 +9,7 @@ import com.wonder.entity.WechatNote;
  * </p>
  *
  * @author DelLevin
- * @since 2023-05-31 08:43:08
+ * @since 2023-05-31 11:33:06
  */
 public interface WechatNoteService extends IService<WechatNote> {
 

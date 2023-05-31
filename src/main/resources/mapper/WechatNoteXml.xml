@@ -5,13 +5,14 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.wonder.entity.WechatNote">
         <result column="note_id" property="noteId" />
+        <result column="note_context" property="noteContext" />
         <result column="note_time" property="noteTime" />
-        <result column="note_content" property="noteContent" />
+        <result column="note_tag" property="noteTag" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        note_id, note_time, note_content
+        note_id, note_context, note_time, note_tag
     </sql>
 
 </mapper>

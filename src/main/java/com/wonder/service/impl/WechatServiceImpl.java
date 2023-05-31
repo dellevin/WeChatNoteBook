@@ -62,6 +62,8 @@ public class WechatServiceImpl implements WechatService {
             {
                 System.out.println("搜索用户-----用户发送的消息："+getUserMessage);
 
+
+
                 //这个是响应消息内容
                 context="笔记已记录,若需在线查看请在浏览器中访问网址并输入账户和密码。\n" +
                         "网址：www.xxxxx.com\n" +

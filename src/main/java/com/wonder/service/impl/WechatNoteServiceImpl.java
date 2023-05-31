@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author DelLevin
- * @since 2023-05-31 08:43:08
+ * @since 2023-05-31 11:33:06
  */
 @Service
 public class WechatNoteServiceImpl extends ServiceImpl<WechatNoteMapper, WechatNote> implements WechatNoteService {

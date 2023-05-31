@@ -17,7 +17,7 @@ import java.util.Date;
  * </p>
  *
  * @author DelLevin
- * @since 2023-05-31 08:43:08
+ * @since 2023-05-31 11:33:06
  */
 @Getter
 @Setter
@@ -32,13 +32,17 @@ public class WechatNote implements Serializable {
     @TableField("note_id")
     private Integer noteId;
 
-    @ApiModelProperty("笔记保存的时间")
+    @ApiModelProperty("笔记内容")
+    @TableField("note_context")
+    private String noteContext;
+
+    @ApiModelProperty("记录笔记时间")
     @TableField("note_time")
     private Date noteTime;
 
-    @ApiModelProperty("笔记内容")
-    @TableField("note_content")
-    private String noteContent;
+    @ApiModelProperty("笔记标签")
+    @TableField("note_tag")
+    private String noteTag;
 
 
 }
