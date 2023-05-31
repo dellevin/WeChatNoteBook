@@ -1,11 +1,7 @@
-package com.wonder.util;
-
-import org.apache.commons.codec.digest.DigestUtils;
+package com.wonder.utils;
 
 import java.security.MessageDigest;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class WechatUtils {
     public static boolean checkSignature(String signature , String timestamp, String nonce,String token) {

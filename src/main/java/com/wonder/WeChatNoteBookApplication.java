@@ -1,4 +1,4 @@
-package com.wonder.wechatnotebook;
+package com.wonder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
