@@ -17,4 +17,6 @@ public interface WechatUserMapper extends BaseMapper<WechatUser> {
     int getUseIsExist( String userName);
     String getUsePassword(String userName);
 
+    int getUseID(String userName);
+
 }

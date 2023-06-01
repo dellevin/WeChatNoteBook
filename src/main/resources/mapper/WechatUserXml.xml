@@ -20,4 +20,9 @@
     <select id="getUsePassword" resultType="String">
         SELECT user_password FROM wechat_user WHERE user_name = #{userName};
     </select>
+
+    <select id="getUseID" resultType="Int">
+        SELECT user_id FROM `wechat_user` WHERE user_name = #{userName};
+    </select>
+
 </mapper>

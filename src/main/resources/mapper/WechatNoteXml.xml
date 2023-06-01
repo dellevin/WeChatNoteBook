@@ -15,4 +15,8 @@
         note_id, note_context, note_time, note_tag
     </sql>
 
+    <select id="getNoteID" resultType="Int">
+        SELECT note_id FROM `wechat_note` WHERE note_context = #{noteContext};
+    </select>
+
 </mapper>

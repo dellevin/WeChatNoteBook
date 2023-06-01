@@ -2,6 +2,7 @@ package com.wonder.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wonder.entity.WechatNote;
+import io.swagger.models.auth.In;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -14,5 +15,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface WechatNoteMapper extends BaseMapper<WechatNote> {
+    int getNoteID(String noteContext);
 
 }
